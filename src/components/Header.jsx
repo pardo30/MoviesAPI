@@ -14,8 +14,8 @@ const Header = () => {
             <NavLink to='/upcoming'>
                 <div className="upcoming">Proximamente</div>
             </NavLink>
-            <NavLink to='/topRated'>
-            <div className="topRated">Más votadas</div> 
+            <NavLink to='/top_rated'>
+            <div className="top_rated">Más votadas</div> 
             </NavLink>
         </header>
         
