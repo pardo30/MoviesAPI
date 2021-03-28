@@ -1,0 +1,27 @@
+@import '../color.scss';
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: $dark-1;
+    color: $light-1;
+
+    
+    padding: 1em;
+    
+    a{
+        all: unset;
+
+        cursor: pointer;
+
+        border-radius: 0.3em;
+        padding: 0.8em;
+    }
+    a:hover{
+        background-color: $dark-2;
+        transition: all 0.5s;
+    }
+}
