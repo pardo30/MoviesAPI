@@ -1,0 +1,41 @@
+@import '../color.scss';
+
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: $dark-1;
+    
+    margin: 0.8em;
+    padding: 0.5em;
+    
+    img{
+        margin:auto;
+        margin-top: 5px;
+        width: 90%;
+    }
+    
+    h5{
+    color: $light-1;
+    }
+    
+    .average{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+       width: 2.5em;
+       height: 2.5em;
+       border-radius: 100%;
+
+       background-color: $light-2;
+       color: $dark-1;
+
+       font-size: 0.8em;
+       p{
+           margin: 0;
+           padding: 0;
+       }    
+    }
+}
