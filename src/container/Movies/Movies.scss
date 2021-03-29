@@ -1,4 +1,6 @@
 .movies{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-left: 20%;
+    margin-right: 20%;
 }
