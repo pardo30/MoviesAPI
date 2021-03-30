@@ -3,11 +3,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Movies from './container/Movies/Movies';
 import './App.css';
+import Title from './components/Title';
 
 
 function App() {
   return (
     <div className="App">
+      <Title/>
       <BrowserRouter>
         <Header/>
         <Switch>
