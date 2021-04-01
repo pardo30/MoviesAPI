@@ -9,14 +9,16 @@ const Search = () => {
     const handleChangeInput = e => {
         const base = e.target;
         e.preventDefault();
-        setSearchData(String(base.value))
+        setSearchData(base.value)
     }
     
-    const SearchMovie = () => {
+    const SearchMovie = (e) => {
         useEffect(() => {
             axios.get(`https://api.themoviedb.org/3/search/movie?api_key=6db8b1cae4de7ed79b6af06f87c63d15&language=es-ES&query=${searchData}`)
             .then(res=> setMovies(res.data.results))
             .catch(error => console.error(error))
+        e.preventDefault();
+        console.log(searchData);
         }, [])
 
     }
