@@ -11,20 +11,23 @@ const Search = () => {
         e.preventDefault();
         setSearchData(base.value)
     }
-    
-    const SearchMovie = (e) => {
-        useEffect(() => {
-            axios.get(`https://api.themoviedb.org/3/search/movie?api_key=6db8b1cae4de7ed79b6af06f87c63d15&language=es-ES&query=${searchData}`)
-            .then(res=> setMovies(res.data.results))
-            .catch(error => console.error(error))
-        e.preventDefault();
-        console.log(searchData);
-        }, [])
 
+    const SearchMovie = () => {
+        const result = String(searchData);
+        console.log(result)
+        return result
     }
+
+    useEffect(result => {
+        axios.get(`https://api.themoviedb.org/3/search/movie?api_key=6db8b1cae4de7ed79b6af06f87c63d15&query=${result}&language=es-ES`)
+        .then(res=> setMovies(res.data.results))
+        .catch(error => console.error(error))
+        }, [])
+    
  
     return (
         <div>
+            {searchData}
            <div className="search">
                <form action="">
                    <input 
