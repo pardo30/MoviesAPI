@@ -19,9 +19,6 @@ const Header = () => {
                 <div className='search'>Busqueda</div> 
                 </NavLink>
             </div>
-            <div>
-                Search
-            </div>
         </header>
 
         

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Movie from './Movie';
+import searchIcon from '../img/search.png'
 import './Search.scss';
 
 const Search = () => {
@@ -24,7 +25,7 @@ const Search = () => {
 
     return (
         <div>
-           <div className="search" >
+           <div className="searchBar" >
                 <input 
                    type='search'
                    autoFocus
@@ -33,7 +34,9 @@ const Search = () => {
                    onKeyPress={press}
                    value={query}
                     />
-                   <button id='button' type='button' onClick={() => setSearch(query)}>Buscar</button>
+                   <button id='button' type='button' onClick={() => setSearch(query)}>
+                       <img src={searchIcon} alt="search icon"/>
+                    </button>
            </div>
            <div className="result">
                {movies?.map(movie=><Movie movie={movie} key={movie.id}/>)}   
