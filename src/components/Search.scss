@@ -1,0 +1,7 @@
+.result{
+    display: grid;
+    grid-template-columns: repeat(5, 220px);
+    //margin-left: 10%;
+    //margin-right: 10%;
+    justify-content: center;
+}
