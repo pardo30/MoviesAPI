@@ -16,7 +16,7 @@ const Search = () => {
 
     useEffect( () => {
         const respose = async () => {
-            const result = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=6db8b1cae4de7ed79b6af06f87c63d15&language=es-ES&query=${search}`)
+            await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=6db8b1cae4de7ed79b6af06f87c63d15&language=es-ES&query=${search}`)
             .then(res=> setMovies(res.data.results))
             .catch(error => console.error(error))
         };

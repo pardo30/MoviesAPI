@@ -10,13 +10,13 @@ const Header = () => {
                     <div className='popular'>Populares</div>
                 </NavLink>
                 <NavLink to='/upcoming'>
-                    <div className='upcoming'>Proximamente</div>
+                    <div className='upcoming'>Próximamente</div>
                 </NavLink>
                 <NavLink to='/top_rated'>
                 <div className='top_rated'>Más votadas</div> 
                 </NavLink>
                 <NavLink to='/search/movie'>
-                <div className='search'>Busqueda</div> 
+                <div className='search'>Búsqueda</div> 
                 </NavLink>
             </div>
         </header>
