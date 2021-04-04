@@ -1,3 +1,5 @@
+@import '../color.scss';
+
 .popup {
     position: fixed;
     width: 100%;
@@ -15,6 +17,71 @@
     right: 25%;
     top: 25%;
     bottom: 25%;
+    
+    height: 50vh;
+
+    border-radius: 15px;
+    
     margin: auto;
+    padding: 10px;
+
     background: white;
+
+
+    .closeButton{
+        float: right;
+        
+        width: 21px;
+        height: 21px;
+        padding: 0;
+
+        text-align: center;
+
+        color: $light-1;
+        background-color: $dark-1;
+        border: unset;
+        border-radius: 100%;
+    }
+    
+    .box1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        .poster{
+        }
+        .info{
+            .data{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                
+                color: $dark-1;
+                h5{
+                    color: $dark-1;
+                }
+            }
+            .title{
+                width: 100%;
+                padding: 15px;
+
+                color: $light-1;
+                background-color: $dark-1;
+            }
+        }
+    }  
+    .box2{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+
+        p{
+            margin: 0;
+            text-align: justify;
+        }
+
+    }
+    .box3{}
   }}
+

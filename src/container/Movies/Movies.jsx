@@ -10,7 +10,7 @@ const Movies = props => {
     
 
     useEffect(() => {
-        axios.get(`https://api.themoviedb.org/3/movie/${movieType}?api_key=6db8b1cae4de7ed79b6af06f87c63d15&&language=es-ES&include_image_language=en,null&page=1`)
+        axios.get(`https://api.themoviedb.org/3/movie/${movieType}?api_key=6db8b1cae4de7ed79b6af06f87c63d15&&language=es-ES&include_image_language=es-ES,null&page=1`)
         .then(res=> setMovies(res.data.results))
         .catch(error => console.error(error))
     }, [movieType]);
