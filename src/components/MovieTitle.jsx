@@ -3,6 +3,8 @@ import React from 'react'
 const MovieTitle = (props) => {
     const movieTitleType = props.movieType;
     
+
+
     const getTitle = (movieTitleType) => {
         if(movieTitleType === 'popular'){
             console.log(20)
