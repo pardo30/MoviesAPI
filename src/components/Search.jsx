@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Movie from './Movie';
-import searchIcon from '../img/search.png'
+import SearchIcon from '@material-ui/icons/Search';
 import './Search.scss';
 
 const Search = () => {
@@ -35,7 +35,7 @@ const Search = () => {
                    value={query}
                     />
                    <button id='button' type='button' onClick={() => setSearch(query)}>
-                       <img src={searchIcon} alt="search icon"/>
+                       <SearchIcon />
                     </button>
            </div>
            <div className="result">
