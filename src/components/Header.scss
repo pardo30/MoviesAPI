@@ -11,7 +11,7 @@ header{
 
     box-shadow: 0 6px 6px -4px $grey-2;
     
-    padding: 1em;
+    padding: 0;
 
     .type{
         display: flex;
@@ -39,6 +39,11 @@ header{
         }
         a:visited{
             color: unset;
+        }
+        .search{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
     }
 }

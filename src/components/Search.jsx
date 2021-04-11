@@ -9,10 +9,10 @@ const Search = () => {
     const [movies, setMovies] = useState([])
     const [search, setSearch] = useState('')
     
-    const press = (e) =>{
-        if (e.keyCode === 13 && !e.shiftKey) {
-            e.preventDefault();
-        }}
+    // const press = (e) =>{
+    //     if (e.keyCode === 13 && !e.shiftKey) {
+    //         setSearch(query);
+    //     }}
 
     useEffect( () => {
         const respose = async () => {
@@ -24,19 +24,21 @@ const Search = () => {
         }, [search]);
 
     return (
-        <div>
+        <div className='search-box'>
            <div className="searchBar" >
                 <input 
-                   type='search'
+                   type='text'
                    autoFocus
                    placeholder='Busca una pelicula'
                    onChange={e => setQuery(e.target.value)}
-                   onKeyPress={press}
-                   value={query}
+                   //value={query}
                     />
-                   <button id='button' type='button' onClick={() => setSearch(query)}>
+                <button
+                    id='button' 
+                    type='button' 
+                    onClick={() => setSearch(query)}>
                        <SearchIcon />
-                    </button>
+                </button>
            </div>
            <div className="result">
                {movies?.map(movie=><Movie movie={movie} key={movie.id}/>)}   

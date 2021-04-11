@@ -19,7 +19,7 @@ const Header = () => {
                     </NavLink>
                 </div>
                 <NavLink to='/search/movie'>
-                <div className='search'><SearchIcon /></div> 
+                <div className='search'><SearchIcon /> Buscar</div> 
                 </NavLink>
             </div>
         </header>

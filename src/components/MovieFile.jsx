@@ -20,29 +20,31 @@ const MovieFile = (props) => {
         <div className="popup">
         <div className="popup_inner">
             <div className="closeButton" onClick={props.showPopup}> <CancelIcon /> </div>
-            <div className="box1">
-                <div className="poster">
-                    <img src={"https://image.tmdb.org/t/p/w185"+movie.poster_path} alt="Movie poster"/>
-                </div>
-                <div className="info">
-                    <div className="data">
-                        <Average average={movie.vote_average}/>
-                        {movie.adult 
-                            ? <img src={More18} alt ='adult content'/>
-                            : null}
-                        <h5 className='year'>  Fecha:  {movie.release_date}</h5>
+            <div className="content">
+                <div className="box1">
+                    <div className="poster">
+                        <img src={"https://image.tmdb.org/t/p/w185"+movie.poster_path} alt="Movie poster"/>
                     </div>
-                    <h4 className='title'>{movie.title}</h4>
+                    <Average average={movie.vote_average}/>
                 </div>
-            </div>
-            <div className="box2">
-                {movie.budget 
-                    ? <p>Presupuesto: {parseFloat(movie.budget)} $</p>
-                    : null}
-                {movie.overview
-                    ?   <div><p>Descripción general:</p>
-                        <p>{movie.overview}</p> </div>
-                    : null}
+                <div className="box2">
+                    <div className="info">
+                        <div className="data">
+                            {movie.adult 
+                                ? <img src={More18} alt ='adult content'/>
+                                : null}
+                            <h5 className='year'>  Fecha:  {movie.release_date}</h5>
+                        </div>
+                        <h4 className='title'>{movie.title}</h4>
+                    </div>
+                    {movie.budget 
+                        ? <p>Presupuesto: {parseFloat(movie.budget)} $</p>
+                        : null}
+                    {movie.overview
+                        ?   <div><p>Descripción general:</p>
+                            <p>{movie.overview}</p> </div>
+                        : null}
+                </div>
             </div>
         </div>
         </div>

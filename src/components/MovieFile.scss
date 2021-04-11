@@ -31,49 +31,57 @@
     .closeButton{
         float: right;
     }
-    
-    .box1{
+    .content{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-end;
-        height: 350px;
-        .poster img{
-            height: 350px;
 
-        }
-        .info{
-            .data{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                
-                color: $dark-1;
-                h5{
+        padding: 15px;
+    
+        .box1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
+            margin: 15px;
+            
+            .poster img{
+                height: 350px;
+                border-radius: 6px;
+
+            }
+            .info{
+                .data{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
                     color: $dark-1;
+                    h5{
+                        color: $dark-1;
+                    }
+                }
+                .title{
+                    width: 100%;
+                    padding: 15px;
+
+                    color: $light-1;
+                    background-color: $dark-1;
                 }
             }
-            .title{
-                width: 100%;
-                padding: 15px;
+        }  
+        .box2{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
 
-                color: $light-1;
-                background-color: $dark-1;
+            p{
+                margin: 0;
+                text-align: justify;
             }
-        }
-    }  
-    .box2{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
 
-        p{
-            margin: 0;
-            text-align: justify;
         }
-
     }
-    .box3{}
-  }}
-
+}}
