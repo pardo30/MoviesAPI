@@ -6,12 +6,12 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 const Pages = (props) => {
     return (
         <div className='pagesBar'>
-            <div classname='moveButton' onClick={props.back}>
-                <ArrowBackIosIcon />
+            <div className='moveButton' onClick={props.back}>
+                <ArrowBackIosIcon fontSize="small" />
             </div>
-            <div>{props.page} / 500 </div>
-            <div classname='moveButton' onClick={props.forward}>
-                <ArrowForwardIosIcon />
+            <div className='numPage'>{props.page}</div>
+            <div className='moveButton' onClick={props.forward}>
+                <ArrowForwardIosIcon fontSize="small" />
             </div>
         </div>
     )

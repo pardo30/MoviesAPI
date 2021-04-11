@@ -1,12 +1,23 @@
+@import '../color.scss';
+
 .pagesBar{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    margin: 20px;
+    margin: 20px 0 20px;
 
+
+    .moveButton{
+        cursor: pointer;
+    }
     .moveButton:hover{
-    background-color: red;
-}  
+        color: $red-1;
+        transform: scale(1.2);
+        transition: all 0.5s;
+    }
+    .numPage{
+        margin: 0 1em 0;
+    } 
 }
