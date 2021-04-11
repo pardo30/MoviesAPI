@@ -13,6 +13,14 @@ const Search = () => {
     //     if (e.keyCode === 13 && !e.shiftKey) {
     //         setSearch(query);
     //     }}
+    const handleSubmit = e => {
+        if (query !== '') {
+            setSearch(query)
+            setQuery('')
+        }
+        e.preventDefault();
+    }
+
 
     useEffect( () => {
         const respose = async () => {
@@ -25,21 +33,19 @@ const Search = () => {
 
     return (
         <div className='search-box'>
-           <div className="searchBar" >
+           <form className="searchBar" onSubmit={handleSubmit} >
                 <input 
                    type='text'
                    autoFocus
                    placeholder='Busca una pelicula'
                    onChange={e => setQuery(e.target.value)}
-                   //value={query}
                     />
                 <button
                     id='button' 
-                    type='button' 
-                    onClick={() => setSearch(query)}>
+                    type='submit'>
                        <SearchIcon />
                 </button>
-           </div>
+           </form>
            <div className="result">
                {movies?.map(movie=><Movie movie={movie} key={movie.id}/>)}   
            </div>

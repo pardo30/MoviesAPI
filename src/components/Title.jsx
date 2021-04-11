@@ -1,10 +1,12 @@
 import React from 'react';
 import './Title.scss';
+import movieImg from '../img/movie.png';
 
 const Title = () => {
     return (
         <div className='title'>
-            <h1>Base de datos de películas</h1>
+            <img src={movieImg} alt="Imagen de rollo de pelicula"/>
+            <h1> Base de datos de películas</h1>
         </div>
     )
 }
