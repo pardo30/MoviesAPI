@@ -17,8 +17,11 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        
         width: 70%;
+        
+        margin-left: 15%;
+        margin-right: 15%;
 
         .block-1{
             display: flex;

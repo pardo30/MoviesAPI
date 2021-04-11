@@ -7,24 +7,21 @@ const MovieTitle = (props) => {
 
     const getTitle = (movieTitleType) => {
         if(movieTitleType === 'popular'){
-            console.log(20)
-            return (<h4>Películas Populares</h4>)
+            return (<h3>Películas Populares</h3>)
         }
         if(movieTitleType === 'upcoming'){
-            return (<h4>Próximas películas</h4>)
+            return (<h3>Próximas películas</h3>)
         }
         if(movieTitleType === 'top_rated'){
-            return (<h4>Pelíulas más votadas</h4>)
+            return (<h3>Pelíulas más votadas</h3>)
         } else {
-            return (<h4>Otros</h4>)
+            return 
         }
     }
 
     return (
-        <div>
-            {movieTitleType}
-            {getTitle}
-            hello
+        <div >
+            {getTitle(movieTitleType)}
         </div>
     )
 }
