@@ -15,34 +15,40 @@ const MovieFile = (props) => {
         .then(res => setMovie(res.data))
         .catch(error => console.error(error))
     },[movieId])
+    
+    const year = String(movie.release_date);
+
+    
+    const numberFormat = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+    const budget = numberFormat.format(parseFloat(movie.budget))
 
     return (
-        <div className="popup">
-        <div className="popup_inner">
-            <div className="closeButton" onClick={props.showPopup}> <CancelIcon /> </div>
-            <div className="content">
-                <div className="box1">
-                    <div className="poster">
-                        <img src={"https://image.tmdb.org/t/p/w185"+movie.poster_path} alt="Movie poster"/>
+        <div className='popup'>
+        <div className='popup_inner'>
+            <div className='closeButton' onClick={props.showPopup}> <CancelIcon /> </div>
+            <div className='content'>
+                <div className='box1'>
+                    <div className='poster'>
+                        <img src={'https://image.tmdb.org/t/p/w185'+movie.poster_path} alt='Movie poster'/>
                     </div>
-                    <Average average={movie.vote_average}/>
-                </div>
-                <div className="box2">
-                    <div className="info">
-                        <div className="data">
-                            {movie.adult 
-                                ? <img src={More18} alt ='adult content'/>
-                                : null}
-                            <h5 className='year'>  Fecha:  {movie.release_date}</h5>
-                        </div>
-                        <h4 className='title'>{movie.title}</h4>
+                    <div className='data'>
+                        <h5 className='year'>{year.substr(0,4)}</h5>
+                        <Average average={movie.vote_average}/>
                     </div>
                     {movie.budget 
-                        ? <p>Presupuesto: {parseFloat(movie.budget)} $</p>
+                        ? <h5 className='budget'>Presupuesto:  {budget}</h5>
                         : null}
+                </div>
+                <div className='box2'>
+                    <div className='info'>
+                        <h4 className='title'>{movie.title}</h4>
+                        <h5 className='originalTitle'>{movie.original_title}</h5>
+                        {movie.adult 
+                            ? <img src={More18} alt ='adult content'/>
+                            : null}
+                    </div>
                     {movie.overview
-                        ?   <div><p>Descripción general:</p>
-                            <p>{movie.overview}</p> </div>
+                        ?   <div className='overview'>Descripción general:<br />{movie.overview}</div>
                         : null}
                 </div>
             </div>

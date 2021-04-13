@@ -51,37 +51,54 @@
                 border-radius: 6px;
 
             }
-            .info{
-                .data{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    
-                    color: $dark-1;
-                    h5{
-                        color: $dark-1;
-                    }
-                }
-                .title{
-                    width: 100%;
-                    padding: 15px;
-
-                    color: $light-1;
-                    background-color: $dark-1;
-                }
+            h5{
+                text-align: initial;
+                color: $black-1;
             }
-        }  
+            .data{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+        }}  
         .box2{
             display: flex;
             flex-direction: column;
             justify-content: left;
             align-items: flex-start;
 
-            p{
+            width: 100%;
+            
+            .info{
+                width: inherit;
+                .title{
+                    justify-content: center;  
+                    
+                    border-bottom: 5px solid $red-1;
+                    width: 100%;
+                    padding: 15px;
+    
+                    color: $black-1;
+                    font-size: 1.2em;
+                }
+                .originalTitle{
+                    width: 100%;
+                    margin: 5px 0 5px;
+                    color: $dark-1;
+                    font-style: italic;
+                }
+                img{
+                    height: 30px;
+                    }
+            }
+            
+            .overview{
+                color:$black-1;
+                font-size: 0.9em;
                 margin: 0;
                 text-align: justify;
             }
-
         }
     }
 }}
