@@ -18,7 +18,9 @@ const MovieFile = (props) => {
     
     const year = String(movie.release_date);
 
-    
+    const genres = movie.genres
+  
+
     const numberFormat = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
     const budget = numberFormat.format(parseFloat(movie.budget))
 
@@ -33,6 +35,7 @@ const MovieFile = (props) => {
                     </div>
                     <div className='data'>
                         <h5 className='year'>{year.substr(0,4)}</h5>
+                        <h5 className='runtime'>{movie.runtime} min</h5>
                         <Average average={movie.vote_average}/>
                     </div>
                     {movie.budget 
@@ -47,9 +50,16 @@ const MovieFile = (props) => {
                             ? <img src={More18} alt ='adult content'/>
                             : null}
                     </div>
+                    <p className='description'>Descripción general:</p>
                     {movie.overview
-                        ?   <div className='overview'>Descripción general:<br />{movie.overview}</div>
-                        : null}
+                        ?   <div className='overview'>{movie.overview}</div>
+                        :   <div className='overview'>No existe descripción para esta película</div>}
+                    <p className='description'>Géneros:</p>
+                    <div className="genres">
+                        {movie.genres
+                        ?  genres.map(genre => <div className='genre'>{genre.name}</div>)
+                        : <div className='overview'>No se han definido géneros para esta película</div>}
+                    </div>
                 </div>
             </div>
         </div>
