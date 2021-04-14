@@ -6,6 +6,7 @@ header{
     justify-content: space-around;
     align-items: center;
 
+
     background-color: white;
     color: black;
 
@@ -13,30 +14,27 @@ header{
     
     padding: 0;
 
+    
+    a{
+        all: unset;
+        text-decoration: none;
+
+        cursor: pointer;
+
+        padding: 0.8em;
+    }
+    a:visited{
+        color: unset;
+    }
+    
     .type{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         
-        width: 70%;
-        
-        margin-left: 15%;
-        margin-right: 15%;
-
-        a{
-            all: unset;
-            text-decoration: none;
-
-            cursor: pointer;
-
-            padding: 0.8em;
-        }
         a:hover{
             border-bottom: 5px solid $red-1;
             transition: all 0.5s;
-        }
-        a:visited{
-            color: unset;
         }
         .search{
             display: flex;

@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
-import './Header.scss';
 import Title from './Title';
+import './Header.scss';
 
 const Header = () => {
     return (
         <header>
-            <Title />
+            <NavLink to='/'> <Title /> </NavLink>
             <div className='type'>
                 <NavLink to='/popular'>
                     <div className='popular'>Populares</div>
