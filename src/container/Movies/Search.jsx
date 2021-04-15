@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Movie from './Movie';
+import Movie from '../../components/Movie';
 import SearchIcon from '@material-ui/icons/Search';
+import background from '../../img/background_cinema.jpg';
 import './Search.scss';
 
 const Search = () => {
@@ -32,10 +33,11 @@ const Search = () => {
         }, [search]);
 
     return (
-        <div className='search-box'>
+        <div className='search-box' className='background' style={{ backgroundImage: `url(${background})` }}>
+            <h3 className="searchTitle">Busca una pelicula dentro la enorme base de datos de TMDB</h3>
            <form className="searchBar" onSubmit={handleSubmit} >
                 <input 
-                   type='text'
+                   type='search'
                    autoFocus
                    placeholder='Busca una pelicula'
                    onChange={e => setQuery(e.target.value)}

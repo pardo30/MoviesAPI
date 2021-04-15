@@ -12,6 +12,9 @@ const MovieTitle = (props) => {
         if(movieTitleType === 'upcoming'){
             return (<h3>Próximas películas</h3>)
         }
+        if(movieTitleType === 'now_playing'){
+            return (<h3>Películas en cartelera</h3>)
+        }
         if(movieTitleType === 'top_rated'){
             return (<h3>Pelíulas más votadas</h3>)
         } else {

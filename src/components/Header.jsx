@@ -18,6 +18,9 @@ const Header = () => {
                 <NavLink to='/top_rated'>
                 <div className='top_rated'>Más votadas</div> 
                 </NavLink>
+                <NavLink to='/now_playing'>
+                <div className='now_playing'>En cartelera</div> 
+                </NavLink>
                 <NavLink to='/search/movie'>
                 <div className='search'><SearchIcon /> Buscar</div> 
                 </NavLink>
