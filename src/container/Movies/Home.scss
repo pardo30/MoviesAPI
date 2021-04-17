@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 .home{
-    margin: 10% auto 20%;
+    margin: 20% auto 20%;
     color: white;
     font-family: 'Bangers';
     letter-spacing: 2px;
     font-weight: normal;
 
-    .background{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -5;
-    overflow: hidden;
-}
 }

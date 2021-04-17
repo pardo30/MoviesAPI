@@ -7,16 +7,19 @@ import './Header.scss';
 const Header = () => {
     return (
         <header>
-            <NavLink to='/'> <Title /> </NavLink>
+            {/* <NavLink to='/'> <Title /> </NavLink> */}
             <div className='type'>
+                <NavLink to='/'> 
+                    <div className='Index'>Inicio</div>
+                </NavLink>
                 <NavLink to='/popular'>
                     <div className='popular'>Populares</div>
                 </NavLink>
                 <NavLink to='/upcoming'>
-                    <div className='upcoming'>Próximamente</div>
+                    <div className='upcoming'>Proximamente</div>
                 </NavLink>
                 <NavLink to='/top_rated'>
-                <div className='top_rated'>Más votadas</div> 
+                <div className='top_rated'>Mas votadas</div> 
                 </NavLink>
                 <NavLink to='/now_playing'>
                 <div className='now_playing'>En cartelera</div> 

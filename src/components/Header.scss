@@ -1,4 +1,6 @@
 @import '../color.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 
 header{
     display: flex;
@@ -6,11 +8,13 @@ header{
     justify-content: space-around;
     align-items: center;
 
-
+    font-family: 'Bangers';
+    letter-spacing: 2px;
+    font-size: 1.2em;
     background-color: none;
     color: white;
 
-    box-shadow: 0 6px 6px -4px $red-1;
+    box-shadow: 0 6px 10px -4px $red-1;
     
     padding: 0;
 
@@ -20,8 +24,8 @@ header{
         text-decoration: none;
 
         cursor: pointer;
-
-        padding: 0.8em;
+        margin: 0.5em 0 0.5em;
+        padding: 0.3em 0.8em 0.3em;
     }
     a:visited{
         color: unset;
@@ -33,6 +37,7 @@ header{
         justify-content: space-between;
         
         a:hover{
+            color: $red-1;
             border-bottom: 5px solid $red-1;
             transition: all 0.5s;
         }

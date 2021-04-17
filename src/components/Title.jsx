@@ -4,7 +4,7 @@ import './Title.scss';
 const Title = () => {
     return (
         <div className='title'>
-            <h1> Base de datos de películas</h1>
+            <h2> Base de datos de peliculas</h2>
         </div>
     )
 }
