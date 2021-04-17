@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
-import Title from './Title';
+//import Title from './Title';
 import './Header.scss';
 
 const Header = () => {
