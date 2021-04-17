@@ -41,6 +41,7 @@ const Search = () => {
                    autoFocus
                    placeholder='Busca una pelicula'
                    onChange={e => setQuery(e.target.value)}
+                   value={query}
                     />
                 <button
                     id='button' 
@@ -48,6 +49,9 @@ const Search = () => {
                        <SearchIcon />
                 </button>
            </form>
+           {search
+                ? <h4 className="searchResults">Resultados para: {search}</h4>
+                : null}
            <div className="result">
                {movies?.map(movie=><Movie movie={movie} key={movie.id}/>)}   
            </div>

@@ -9,19 +9,23 @@
     margin-left: 15%;
     margin-right: 15%;
     
-
-
+    .searchTitle{
+        margin: 25px 0 0;
+        color: $grey-3;
+    }
+    
+    
     .searchBar{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        
         background: #fff;
         
         width: 690px;
         height: 44px;
-
+        
         margin:40px;
         padding-left: 15px;
         padding-right: 15px;
@@ -29,7 +33,7 @@
         border: 1px solid transparent;
         border-radius: 24px;
         box-shadow: 0 2px 5px 1px rgba(0,0,0,0.16);
-
+        
         
         input{
             width: 100%;
@@ -37,21 +41,21 @@
             background-color: transparent;
             border: none;
             border-radius: 0.5em;
-    
+            
             margin: 0;
             padding: 0;
-
+            
             color: rgba(0,0,0,.87);
             
             word-wrap: break-word;
             outline: none;
-
+            
             //argin-top: -37px;
             height: 34px;
             font-size: 16px;
-
-
-
+            
+            
+            
             :focus{
                 border: 2px solid $dark-2
             }
@@ -64,6 +68,10 @@
         img{
             height: 30px;
         }
+    }
+    .searchResults{
+        margin: 0 0 20px;
+        color: $grey-3;
     }
     .result{
         display: grid;
