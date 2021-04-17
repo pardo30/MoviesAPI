@@ -20,12 +20,12 @@ const Average = (props) => {
     }  
     const styles = {
         borderRightStyle: 'solid',  
-        borderRightWidth: '5px',
+        borderRightWidth: '8px',
         borderRightColor: color(),
     }
     return (
         <div className='average' style={styles}>
-            <p>{props.average}</p>
+            <h6>{props.average}</h6>
         </div>
     )
 }

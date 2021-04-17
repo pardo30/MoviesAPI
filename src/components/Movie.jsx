@@ -19,7 +19,7 @@ const Movie = ({movie}) => {
               <Average average={movie.vote_average}/>
             </div>
           </div>
-          <h5 className='title'>{movie.title}</h5>
+          <h5 className='titleMovie'>{movie.title}</h5>
           {showPopup 
             ? <MovieFile movieId={movie.id} showPopup={()=>setShowPopup(!showPopup)}/>
             : null 
