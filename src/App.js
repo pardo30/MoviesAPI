@@ -18,7 +18,7 @@ function App() {
           <Route path='/' component={Home} />
         </Switch>
       </BrowserRouter>
-      <div className='blackBack'></div>
+      <div className='backgroundApp'></div>
     </div>
   );
 }

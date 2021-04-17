@@ -3,7 +3,7 @@ import axios from 'axios';
 import Movie from '../../components/Movie';
 import MovieTitle from '../../components/MovieTitle';
 import Pages from '../../components/Pages';
-import background from '../../img/background_cinema.jpg';
+//import background from '../../img/background_cinema.jpg';
 import './Movies.scss';
 
 const Movies = props => {
@@ -39,12 +39,7 @@ const Movies = props => {
                 back={back}
                 forward={forward}
             />
-            <div className='background' style={{ backgroundImage: `url(${background})` }} ></div>
-            {/* <div className='pagesBar'>
-                <button onClick={()=>setPage(page - 1)}>atrás</button>
-                <div>{selectedPage} / 500 </div>
-                <button onClick={()=>setPage(page + 1)}>delante</button>
-            </div> */}
+            
         </div>
     )
 }

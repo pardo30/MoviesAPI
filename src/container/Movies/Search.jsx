@@ -33,7 +33,7 @@ const Search = () => {
         }, [search]);
 
     return (
-        <div className='search-box' className='background' style={{ backgroundImage: `url(${background})` }}>
+        <div className='search-box'>
             <h3 className="searchTitle">Busca una pelicula dentro la enorme base de datos de TMDB</h3>
            <form className="searchBar" onSubmit={handleSubmit} >
                 <input 
@@ -51,6 +51,7 @@ const Search = () => {
            <div className="result">
                {movies?.map(movie=><Movie movie={movie} key={movie.id}/>)}   
            </div>
+           <div className='background' style={{ backgroundImage: `url(${background})` }} ></div>
         </div>
     )
 }
