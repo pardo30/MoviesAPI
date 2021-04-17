@@ -45,9 +45,12 @@ const MovieFile = (props) => {
                 <div className='box2'>
                     <div className='info'>
                         <h4 className='title'>{movie.title}</h4>
-                        <h5 className='originalTitle'>{movie.original_title}</h5>
+                        <h5 className='originalTitle'>"{movie.original_title}"</h5>
                         {movie.adult 
                             ? <img src={More18} alt ='adult content'/>
+                            : null}
+                        {movie.tagline
+                            ? <div className='tagline'>{movie.tagline}</div>
                             : null}
                     </div>
                     <p className='description'>Descripción general:</p>

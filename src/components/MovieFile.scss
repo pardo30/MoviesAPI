@@ -9,7 +9,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(153, 153, 153, 0.5);
   
   .popup_inner {
     position: absolute;
@@ -21,15 +21,18 @@
     height: 50vh;
 
     border-radius: 15px;
+    box-shadow: 0 10px 15px 0 rgba(255, 3, 3, 0.445);
     
     margin: auto;
     padding: 10px;
 
-    background: white;
+    background: black;
 
 
     .closeButton{
         float: right;
+        color: $grey-3;
+        cursor: pointer;
     }
     .content{
         display: flex;
@@ -37,13 +40,16 @@
         justify-content: center;
 
         padding: 15px;
+        color: $grey-3;
+
+        cursor: default;
     
         .box1{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-end;
-
+            align-items: center;
+            height: 430px;
             margin: 15px;
             
             .poster img{
@@ -53,7 +59,6 @@
             }
             h5{
                 text-align: initial;
-                color: $black-1;
             }
             .data{
                 width: 100%;
@@ -61,6 +66,9 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+            }
+            .budget{
+                margin: 0;
             }
         }  
         .box2{
@@ -80,28 +88,34 @@
                     width: 100%;
                     padding: 15px;
                     
-                    color: $black-1;
                     font-size: 1.2em;
                 }
                 .originalTitle{
                     width: 100%;
                     margin: 5px 0 5px;
-                    color: $dark-1;
+
                     font-style: italic;
+                }
+                .tagline{
+                    margin: 10px 0 5px;
+                    font-size: 0.9em;
+                    color:$grey-2;
                 }
                 img{
                     height: 30px;
                 }
             }
             
+            .description{
+                margin: 0.5em 0 0.5em;
+                font-weight: bold;
+                
+            }
             .overview{
-                color:$black-1;
+
                 font-size: 0.9em;
                 margin: 0;
                 text-align: justify;
-                .description{
-                    font-weight: bold;
-                }
             }
             .genres {
                 display: flex;
@@ -112,7 +126,6 @@
                 .genre{
                     margin: 5px;
                     font-size: 0.9em;
-                    color: $black-1;
                 }
             }
         }
