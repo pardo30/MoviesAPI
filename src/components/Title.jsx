@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './Title.scss';
 
 const Title = () => {
     return (
-        <div>
-            <h1>Aplicación de Peliculas</h1>
+        <div className='title'>
+            <h2> Base de datos de peliculas</h2>
         </div>
     )
 }

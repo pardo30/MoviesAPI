@@ -12,20 +12,20 @@ const Average = (props) => {
             return "#FFFE01"
         } else if (average < 6 && average >= 5) {
             return "#FEC000"
-        } else if (average < 5  && average >=3) {
-            return "#FEC000"
+        } else if (average < 5 && average > 0) {
+            return "#FE0001"
         } else {
-            return "FE0001"
+            return "#FFFFFF"
         }
     }  
     const styles = {
-        borderRightStyle: 'solid',
-        borderRightWidth: '5px',
+        borderRightStyle: 'solid',  
+        borderRightWidth: '8px',
         borderRightColor: color(),
     }
     return (
         <div className='average' style={styles}>
-            <p>{props.average}</p>
+            <h6>{props.average}</h6>
         </div>
     )
 }

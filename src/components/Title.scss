@@ -1,0 +1,18 @@
+@import '../color.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items: center;
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Bangers';
+    letter-spacing: 2px;
+    font-weight: normal;
+
+}

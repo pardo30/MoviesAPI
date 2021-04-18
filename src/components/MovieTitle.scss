@@ -1,0 +1,9 @@
+@import '../color.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: $grey-3;
+}
