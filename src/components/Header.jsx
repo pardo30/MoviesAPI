@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import DehazeIcon from '@material-ui/icons/Dehaze';
@@ -9,7 +9,16 @@ import './Header.scss';
 
 const Header = () => {
     
-    const mediaMatch = window.screen.width;
+    const [media, setMedia] = useState('')
+
+    useEffect(() => {
+        const updateWidth = () => {
+            const width = document.body.clientWidth
+            setMedia(width)
+          }
+          updateWidth()
+          window.addEventListener("resize", updateWidth)
+    }, [])
     const [open, setOpen] = useState(false)
 
     const openMenu = e => {
@@ -19,7 +28,7 @@ const Header = () => {
             : setOpen (true)
         
     }
-    if(mediaMatch > 450) {
+    if(media > 450) {
     return (
         <header>
             <div className='type'>
