@@ -38,13 +38,8 @@ const Header = () => {
                 <NavLink to='/now_playing'>
                 <div className='now_playing'>En cartelera</div> 
                 </NavLink>
-<<<<<<< HEAD
-                <NavLink to='/search/movies/'>
-                <div className='search'>Busqueda</div> 
-=======
                 <NavLink to='/search/movie'>
                 <div className='search'><SearchIcon /> Buscar</div> 
->>>>>>> responsive
                 </NavLink>
             </div>
         </header>
