@@ -48,3 +48,24 @@ header{
         }
     }
 }
+.dropMenu{
+    text-align: right;
+    margin: 5px;
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .dropButton{
+            margin: 5px;
+        }
+        a{
+            all:unset;
+            color: $grey-3;
+        }
+        a:visited{
+            all:unset;
+            color: $grey-3;
+        }
+    }
+}

@@ -13,33 +13,54 @@
   
   .popup_inner {
     position: absolute;
-    left: 25%;
-    right: 25%;
-    top: 25%;
-    bottom: 25%;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    //bottom: 20%;
     
-    height: 50vh;
+    min-height: 30vh;
 
     border-radius: 15px;
     box-shadow: 0 10px 15px 0 rgba(255, 3, 3, 0.445);
     
-    margin: auto;
+    margin: 0;
     padding: 10px;
 
     background: black;
 
+    @media only screen and (max-width: 1025px) {
+        top: 15%;
+        min-height: 50vh;
+     }
+     @media only screen and (max-width: 768px) {
+        top: 20%;
+        left: 10%;
+        right: 10%;
+        min-height: 50vh;
+     }
+     @media only screen and (max-width: 450px) {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+     }
 
     .closeButton{
         float: right;
         color: $grey-3;
         cursor: pointer;
+        @media only screen and (max-width: 450px) {
+            float: none;
+        }
     }
     .content{
         display: flex;
         flex-direction: row;
         justify-content: center;
-
-        padding: 15px;
+        @media only screen and (max-width: 450px) {
+            flex-direction: column;
+        }
+        padding: 5px;
         color: $grey-3;
 
         cursor: default;
@@ -61,7 +82,7 @@
                 text-align: initial;
             }
             .data{
-                width: 100%;
+                width: 233px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -80,13 +101,13 @@
             width: 100%;
             
             .info{
-                width: inherit;
+                width: 100%;
                 .title{
                     justify-content: center;  
                     
                     border-bottom: 5px solid $red-1;
                     width: 100%;
-                    padding: 15px;
+                    padding: 15px 0 15px;
                     
                     font-size: 1.2em;
                 }
@@ -116,6 +137,14 @@
                 font-size: 0.9em;
                 margin: 0;
                 text-align: justify;
+            }
+            @media only screen and (max-width: 450px) {
+                .descriptionMovie{
+                    display: none;
+                }
+                .overview{
+                    display: none;
+                }
             }
             .genres {
                 display: flex;

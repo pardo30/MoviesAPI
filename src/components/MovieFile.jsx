@@ -53,11 +53,11 @@ const MovieFile = (props) => {
                             ? <div className='tagline'>{movie.tagline}</div>
                             : null}
                     </div>
-                    <p className='description'>Descripción general:</p>
+                    <p className='descriptionMovie description'>Descripción general:</p>
                     {movie.overview
                         ?   <div className='overview'>{movie.overview}</div>
                         :   <div className='overview'>No existe descripción para esta película</div>}
-                    <p className='description'>Géneros:</p>
+                    <p className='descriptionGenre descriotion'>Géneros:</p>
                     <div className="genres">
                         {movie.genres
                         ?  genres.map(genre => <div className='genre'>{genre.name}</div>)

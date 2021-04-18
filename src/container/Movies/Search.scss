@@ -7,9 +7,7 @@
     justify-content: center;
     align-items: center;
     
-    margin-left: 15%;
-    margin-right: 15%;
-    
+   
     .searchTitle{
         margin: 25px 0 0;
         color: $grey-3;
@@ -27,7 +25,13 @@
         
         background: #fff;
         
-        width: 690px;
+        width: 650px;
+        @media only screen and (max-width: 1023px) {
+            width: 60%;
+        }
+        @media only screen and (max-width: 450px) {
+            width: 80%; 
+        }
         height: 44px;
         
         margin:40px;
@@ -79,9 +83,17 @@
     }
     .result{
         display: grid;
-        grid-template-columns: repeat(5, 220px);
-        //margin-left: 10%;
-        //margin-right: 10%;
+        grid-template-columns: repeat(5, 195px);
         justify-content: center;
+        //justify-items: center;
+        @media only screen and (max-width: 1023px) {
+            grid-template-columns: repeat(4, 195px); 
+         }
+         @media only screen and (max-width: 768px) {
+             grid-template-columns: repeat(3, 195px); 
+         }
+         @media only screen and (max-width: 450px) {
+             grid-template-columns: repeat(1, 195px); 
+         }
     }
 }

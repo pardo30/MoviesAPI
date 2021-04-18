@@ -1,4 +1,5 @@
 import React from 'react'
+import './MovieTitle.scss'
 
 const MovieTitle = (props) => {
     const movieTitleType = props.movieType;
