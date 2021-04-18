@@ -18,15 +18,20 @@
        color: unset;
     }
     h3{
-        margin-top: 5em;
+        margin-top: 6em;
     }
     .latest{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
-        h5{
-            margin: 0;
+        align-items: flex-end;
+        img{
+            width: 185px;
+            border-radius: 6px;
+        }
+        h4{
+            font-family: Roboto;
+            margin: 0 5px 0;
         }
     }
 }

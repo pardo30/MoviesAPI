@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
+import emptyMovie from '../../img/empty_movie.png'
 import './Home.scss';
 
 const Home = () => {
@@ -12,6 +13,8 @@ useEffect(()=> {
     .then(res => setLatest(res.data))
     .catch(error => console.error(error))
 },[])
+
+const year = String(latest.release_date);
     
 
     return (
@@ -21,8 +24,15 @@ useEffect(()=> {
             </NavLink>
             <h3>Última película añadida</h3>
             <div className="latest">
-                <img src={"https://image.tmdb.org/t/p/w185"+latest.poster_path} alt="Movie poster"/>
-                <h5 className='titleMovie'>{latest.title}</h5>
+                {latest.poster
+                    ? <img src={"https://image.tmdb.org/t/p/w185"+latest.poster_path} alt="Movie poster"/>
+                    : <img src={emptyMovie} alt='empty movie poster'/>}
+                <h4 className='titleMovie'>
+                    {latest.title} 
+                    {latest.release_date
+                        ? <h4>({year.substr(0,4)})</h4>
+                        : null}
+                </h4>
             </div>
 
         </div>
