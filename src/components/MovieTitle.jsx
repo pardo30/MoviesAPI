@@ -17,7 +17,7 @@ const MovieTitle = (props) => {
             return (<h3>Películas en cartelera</h3>)
         }
         if(movieTitleType === 'top_rated'){
-            return (<h3>Pelíulas más votadas</h3>)
+            return (<h3>Películas más votadas</h3>)
         } else {
             return 
         }

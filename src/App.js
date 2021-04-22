@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path='/:movieType' component={Movies} exact></Route>
           <Route path='/search/movie' component={Search} />
-          <Route path='/' component={Home} />
+          <Route path='/MoviesAPI/' component={Home} />
         </Switch>
       </BrowserRouter>
       <div className='backgroundApp'></div>
