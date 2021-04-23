@@ -14,6 +14,12 @@ A complete database web application designed with React Hooks using the [Themovi
 ![ScreenShot Popular Gif](./src/img/Popular.gif)
 ![ScreenShot Search Gif](./src/img/Search.gif)
 
+#### Responsive Design:
+
+![ScreenShot tablet](./src/img/Responsive_1024x768.png)
+![ScreenShot phone](./src/img/Responsive_mobile.png)
+![ScreenShot phone](./src/img/Responsive_mobile2.png)
+
 ## Technologies
 ***
 A list of technologies used within the project:
