@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Average from './Average';
 import './Movie.scss';
 import MovieFile from './MovieFile';
+import emptyMovie from '../img/empty_movie.png'
 
 const Movie = ({movie}) => {
   const [showPopup, setShowPopup] = useState(false)
@@ -11,7 +12,9 @@ const Movie = ({movie}) => {
   return (
         <div className='movie' onClick={()=>setShowPopup(!showPopup)}>
           <div className='img-box'>
-            <img src={"https://image.tmdb.org/t/p/w185"+movie.poster_path} alt="Movie poster"/>
+            {movie.poster_path
+              ? <img src={"https://image.tmdb.org/t/p/w185"+movie.poster_path} alt="Movie poster"/>
+              : <img src={emptyMovie} alt='empty movie poster'/>}
           </div>
           <div className='line1'>
             <h6 className='year'>{movie.release_date.substr(0,4)}</h6>

@@ -24,7 +24,7 @@ const year = String(latest.release_date);
             </NavLink>
             <h3>Última película añadida</h3>
             <div className="latest">
-                {latest.poster
+                {latest.poster_path
                     ? <img src={"https://image.tmdb.org/t/p/w185"+latest.poster_path} alt="Movie poster"/>
                     : <img src={emptyMovie} alt='empty movie poster'/>}
                 <h4 className='titleMovie'>
