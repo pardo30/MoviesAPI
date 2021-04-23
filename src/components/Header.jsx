@@ -32,22 +32,22 @@ const Header = () => {
     return (
         <header>
             <div className='type'>
-                <NavLink to='/'> 
+                <NavLink to='/MoviesAPI/'> 
                     <div className='Index'>Inicio</div>
                 </NavLink>
-                <NavLink to='/popular'>
+                <NavLink to='/MoviesAPI/popular'>
                     <div className='popular'>Populares</div>
                 </NavLink>
-                <NavLink to='/upcoming'>
+                <NavLink to='/MoviesAPI/upcoming'>
                     <div className='upcoming'>Proximamente</div>
                 </NavLink>
-                <NavLink to='/top_rated'>
+                <NavLink to='/MoviesAPI/top_rated'>
                 <div className='top_rated'>Mas votadas</div> 
                 </NavLink>
-                <NavLink to='/now_playing'>
+                <NavLink to='/MoviesAPI/now_playing'>
                 <div className='now_playing'>En cartelera</div> 
                 </NavLink>
-                <NavLink to='/search/movie'>
+                <NavLink to='/MoviesAPI/search/movie'>
                 <div className='search'><SearchIcon /> Buscar</div> 
                 </NavLink>
             </div>
