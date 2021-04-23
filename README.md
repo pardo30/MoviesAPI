@@ -11,7 +11,9 @@
 A complete database web application designed with React Hooks using the [Themoviedb] API (https://developers.themoviedb.org/3) - Version 3. The web application displays different lists of movies (most popular, top rated, current and upcoming), as well as offering a search bar for your own movie search. Clicking on a movie opens a pop-up window with detailed information about it.
 
 ### Screenshot
-![ScreenShot Popular Gif](./img/Popular.gif)
+![ScreenShot Popular Gif](./src/img/Popular.gif)
+![ScreenShot Search Gif](./src/img/Search.gif)
+
 ## Technologies
 ***
 A list of technologies used within the project:
