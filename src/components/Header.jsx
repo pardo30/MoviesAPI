@@ -58,22 +58,22 @@ const Header = () => {
                 <div onClick={openMenu} className='dropButton'><DehazeIcon style={{ color: grey[50] }} /> </div>
                 {open
                     ? (<div className='dropdown'>
-                        <NavLink to='/'> 
+                        <NavLink to='/MoviesAPI/'> 
                             <div className='Index'>Inicio</div>
                         </NavLink>
-                        <NavLink to='/popular'>
+                        <NavLink to='/MoviesAPI/popular'>
                             <div className='popular'>Populares</div>
                         </NavLink>
-                        <NavLink to='/upcoming'>
+                        <NavLink to='/MoviesAPI/upcoming'>
                             <div className='upcoming'>Próximamente</div>
                         </NavLink>
-                        <NavLink to='/top_rated'>
+                        <NavLink to='/MoviesAPI/top_rated'>
                         <div className='top_rated'>Más votadas</div> 
                         </NavLink>
-                        <NavLink to='/now_playing'>
+                        <NavLink to='/MoviesAPI/now_playing'>
                         <div className='now_playing'>En cartelera</div> 
                         </NavLink>
-                        <NavLink to='/search/movie'>
+                        <NavLink to='/MoviesAPI/search/movie'>
                         <div className='search'>Buscar</div> 
                         </NavLink>
                     </div>)
