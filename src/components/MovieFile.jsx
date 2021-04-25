@@ -59,7 +59,7 @@ const MovieFile = (props) => {
                     <p className='descriptionGenre descriotion'>Géneros:</p>
                     <div className="genres">
                         {movie.genres
-                        ?  genres.map(genre => <div className='genre'>{genre.name}</div>)
+                        ?  genres.map(genre => <div className='genre' key={genre.name}>{genre.name}</div>)
                         : <div className='overview'>No se han definido géneros para esta película</div>}
                     </div>
                 </div>
