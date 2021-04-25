@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Average from './Average';
 import More18 from '../img/18.png';
+import emptyMovie from '../img/empty_movie.png'
 import CancelIcon from '@material-ui/icons/Cancel';
 import './MovieFile.scss';
 
@@ -30,7 +31,9 @@ const MovieFile = (props) => {
             <div className='content'>
                 <div className='box1'>
                     <div className='poster'>
-                        <img src={'https://image.tmdb.org/t/p/w185'+movie.poster_path} alt='Movie poster'/>
+                        {movie.poster_path
+                          ? <img src={'https://image.tmdb.org/t/p/w185'+movie.poster_path} alt='Movie poster'/>
+                          : <img src={emptyMovie} alt='empty movie poster'/>}
                     </div>
                     <div className='data'>
                         <h5 className='year'>{year.substr(0,4)}</h5>
