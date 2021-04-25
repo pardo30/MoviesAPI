@@ -9,7 +9,6 @@ const MovieFile = (props) => {
     const movieId = props.movieId;
     const [movie, setMovie] = useState([]);
     
-    console.log(movieId);
     useEffect(()=> {
         axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=6db8b1cae4de7ed79b6af06f87c63d15&&language=es-ES&include_image_language=es`)
         .then(res => setMovie(res.data))

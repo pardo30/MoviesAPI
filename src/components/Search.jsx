@@ -14,7 +14,6 @@ const Search = () => {
 
     const SearchMovie = () => {
         const result = String(searchData);
-        console.log(result)
         return result
     }
 
