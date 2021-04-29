@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MoviesAPI/static/css/main.afe8089b.chunk.css",
-    "main.js": "/MoviesAPI/static/js/main.c4a13fce.chunk.js",
-    "main.js.map": "/MoviesAPI/static/js/main.c4a13fce.chunk.js.map",
+    "main.css": "/MoviesAPI/static/css/main.c784a099.chunk.css",
+    "main.js": "/MoviesAPI/static/js/main.57381d38.chunk.js",
+    "main.js.map": "/MoviesAPI/static/js/main.57381d38.chunk.js.map",
     "runtime-main.js": "/MoviesAPI/static/js/runtime-main.ae795295.js",
     "runtime-main.js.map": "/MoviesAPI/static/js/runtime-main.ae795295.js.map",
     "static/js/2.cf6f2161.chunk.js": "/MoviesAPI/static/js/2.cf6f2161.chunk.js",
     "static/js/2.cf6f2161.chunk.js.map": "/MoviesAPI/static/js/2.cf6f2161.chunk.js.map",
     "index.html": "/MoviesAPI/index.html",
-    "static/css/main.afe8089b.chunk.css.map": "/MoviesAPI/static/css/main.afe8089b.chunk.css.map",
+    "static/css/main.c784a099.chunk.css.map": "/MoviesAPI/static/css/main.c784a099.chunk.css.map",
     "static/js/2.cf6f2161.chunk.js.LICENSE.txt": "/MoviesAPI/static/js/2.cf6f2161.chunk.js.LICENSE.txt",
     "static/media/App.css": "/MoviesAPI/static/media/background_cinema.5b3bec93.jpg",
     "static/media/empty_movie.5f573ea7.png": "/MoviesAPI/static/media/empty_movie.5f573ea7.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.ae795295.js",
     "static/js/2.cf6f2161.chunk.js",
-    "static/css/main.afe8089b.chunk.css",
-    "static/js/main.c4a13fce.chunk.js"
+    "static/css/main.c784a099.chunk.css",
+    "static/js/main.57381d38.chunk.js"
   ]
 }
