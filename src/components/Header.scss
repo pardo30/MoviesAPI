@@ -8,17 +8,16 @@ header{
     justify-content: space-around;
     align-items: center;
 
+    padding: 0;
+
+    box-shadow: 0 6px 10px -4px $red-1;
+    
+    color: white;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;
     font-size: 1.2em;
     background-color: none;
-    color: white;
 
-    box-shadow: 0 6px 10px -4px $red-1;
-    
-    padding: 0;
-
-    
     a{
         all: unset;
         text-decoration: none;

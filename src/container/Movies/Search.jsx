@@ -9,6 +9,7 @@ const Search = () => {
     const [query, setQuery] = useState('')
     const [movies, setMovies] = useState([])
     const [search, setSearch] = useState('')
+    const tenMovies = movies.slice(0,10);
     
     // const press = (e) =>{
     //     if (e.keyCode === 13 && !e.shiftKey) {
@@ -50,10 +51,10 @@ const Search = () => {
                 </button>
            </form>
            {search
-                ? <h4 className="searchResults">Resultados para: {search}</h4>
+                ? <h4 className="searchResults">Los primeros 10 resultados para: {search}</h4>
                 : null}
            <div className="result">
-               {movies?.map(movie=><Movie movie={movie} key={movie.id}/>)}   
+               {tenMovies?.map(movie=><Movie movie={movie} key={movie.id}/>)}   
            </div>
            <div className='background' style={{ backgroundImage: `url(${background})` }} ></div>
         </div>

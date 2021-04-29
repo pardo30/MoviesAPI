@@ -6,16 +6,16 @@
     justify-content: center;
     align-items: flex-start;
 
-    padding: 0;
-
+    
     width: 185px;
     max-width: 200px;
+    margin: 0.8em;
+    padding: 0;
     
     background-color: rgba(36, 36, 36, 0.671);
     border-radius: 6px;
     box-shadow: 0 10px 15px 0 rgba(255, 3, 3, 0.445);
     
-    margin: 0.8em;
     cursor: pointer;
     
     .line1{
@@ -39,7 +39,6 @@
             border-top-right-radius:6px;
             display: inline-block;
             box-sizing: border-box;
-            //outline: none;
         }
     }
     .titleMovie{
@@ -56,11 +55,12 @@
     }
     
     h6{
-        margin: 0;
-        padding-left: 0.5em;
-        margin-top: 3px;
-        
         align-items: left;
+
+        margin: 0;
+        margin-top: 3px;
+        padding-left: 0.5em;
+        
         font-size: 0.8em;
         
         color: $grey-3;

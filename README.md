@@ -1,16 +1,17 @@
 # REACT-MOVIE-API with Hooks
 
 ## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [License](#License)
+1. [General Info](#General-Info)
+2. [Screenshots](#Screenshots)
+3. [Technologies](#Technologies)
+4. [Installation](#Installation)
+5. [Collaboration](#Collaboration)
+6. [License](#License)
 
 ### General Info
-A complete database web application designed with React Hooks using the [Themoviedb] API (https://developers.themoviedb.org/3) - Version 3. The web application displays different lists of movies (most popular, top rated, current and upcoming), as well as offering a search bar for your own movie search. Clicking on a movie opens a pop-up window with detailed information about it.
+A complete database web application designed with React Hooks using the [Themoviedb] API (https://developers.themoviedb.org/3) - Version 3. The web application displays different lists of movies (most popular, top rated, current and upcoming), as well as offering a search bar for your own movie search. Clicking on a movie opens a pop-up window with detailed information about it. It's a responsive design app.
 
-### Screenshot
+### Screenshots
 ![ScreenShot Popular Gif](./src/img/Popular.gif)
 ![ScreenShot Search Gif](./src/img/Search.gif)
 
@@ -52,9 +53,9 @@ API calls:
 * Get a list of the current popular movies on TMDB: `https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US`
 * Get the top rated movies on TMDB: `https://api.themoviedb.org/3/movie/top_rated?api_key=<<api_key>>&language=en-US`
 * Get a list of upcoming movies in theatres: `https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US`
-* Search using Movie Id: `ttps://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US`
+* Search using Movie Id: `https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US`. It shows the first 10 results.
 
-## collaboration
+## Collaboration
 ***
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
